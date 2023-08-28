@@ -1,0 +1,300 @@
+.tour-card__wrapper {
+  padding: 206px 20px 26px;
+  background-color: $color-dark;
+  background-repeat: no-repeat;
+  background-size: cover;
+
+  @include vp-1200 {
+    padding-bottom: 27px;
+    min-width: 324px;
+    max-width: 324px;
+  }
+
+  @include vp-767 {
+    min-width: 290px;
+    max-width: 290px;
+    padding: 197px 20px 25px;
+  }
+
+  &--caucasus {
+    background-image: url("../img/tours/caucasus.jpg");
+
+    @media (min-resolution: 2dppx) {
+      background-image: url("../img/tours/caucasus@2x.jpg");
+    }
+
+    @include vp-1200 {
+      background-image: url("../img/tours/caucasus-tab.jpg");
+
+      @media (min-resolution: 2dppx) {
+        background-image: url("../img/tours/caucasus-tab@2x.jpg");
+      }
+    }
+
+    @include vp-767 {
+      background-image: url("../img/tours/caucasus-mob.jpg");
+
+      @media (min-resolution: 2dppx) {
+        background-image: url("../img/tours/caucasus-mob@2x.jpg");
+      }
+    }
+  }
+
+  &--altay {
+    background-image: url("../img/tours/altay.jpg");
+
+    @media (min-resolution: 2dppx) {
+      background-image: url("../img/tours/altay@2x.jpg");
+    }
+
+    @include vp-1200 {
+      background-image: url("../img/tours/altay-tab.jpg");
+
+      @media (min-resolution: 2dppx) {
+        background-image: url("../img/tours/altay-tab@2x.jpg");
+      }
+    }
+
+    @include vp-767 {
+      background-image: url("../img/tours/altay-mob.jpg");
+
+      @media (min-resolution: 2dppx) {
+        background-image: url("../img/tours/altay-mob@2x.jpg");
+      }
+    }
+  }
+
+  &--adygea {
+    background-image: url("../img/tours/adygea.jpg");
+
+    @media (min-resolution: 2dppx) {
+      background-image: url("../img/tours/adygea@2x.jpg");
+    }
+
+    @include vp-1200 {
+      background-image: url("../img/tours/adygea-tab.jpg");
+
+      @media (min-resolution: 2dppx) {
+        background-image: url("../img/tours/adygea-tab@2x.jpg");
+      }
+    }
+
+    @include vp-767 {
+      background-image: url("../img/tours/adygea-mob.jpg");
+
+      @media (min-resolution: 2dppx) {
+        background-image: url("../img/tours/adygea-mob@2x.jpg");
+      }
+    }
+  }
+
+  & h3 {
+    color: $color-light;
+    max-width: 235px;
+    margin: 0;
+    margin-bottom: 17px;
+    padding: 0;
+    font-family: $font-bold;
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 28px;
+
+    @include vp-767 {
+      font-size: 20px;
+      line-height: 24px;
+    }
+  }
+}
+
+.tour-card__top-list {
+  margin: 0;
+  margin-bottom: 23px;
+  padding: 0;
+  list-style-type: none;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+
+  @include vp-767 {
+    margin-bottom: 59px;
+    position: relative;
+    justify-content: start;
+  }
+}
+
+.tour-card__top-item {
+  margin-right: 20px;
+  display: flex;
+  align-items: center;
+
+  @include vp-1200 {
+    margin-right: 0;
+  }
+
+  @include vp-767 {
+    margin-right: 16px;
+  }
+
+  &:nth-child(3n) {
+    margin-right: 0;
+  }
+
+  & svg {
+    margin-right: 12px;
+    display: block;
+
+    @include vp-767 {
+      margin-right: 13px;
+    }
+  }
+
+  & span {
+    color: $color-light;
+    font-family: $font-regular;
+    font-size: 12px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 100%;
+  }
+
+  &--place {
+    background-color: $color-bright;
+    padding: 9px 25px 8px;
+    min-width: 108px;
+
+    @include vp-1200 {
+      padding: 9px 23px 8px 15px;
+      min-width: 88px;
+    }
+
+    @include vp-767 {
+      padding-right: 24px;
+      position: absolute;
+      bottom: -44px;
+      left: 0;
+    }
+
+    & svg {
+      margin-right: 6px;
+    }
+  }
+
+  &--days {
+    min-width: 76px;
+  }
+
+  &--nights {
+    min-width: 82px;
+  }
+}
+
+.tour-card__bottom-list {
+  margin: 0;
+  padding: 0;
+  padding-top: 20px;
+  padding-right: 5px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  position: relative;
+
+  &::before {
+    content: "";
+    position: absolute;
+    width: 80px;
+    height: 1px;
+    opacity: 0.2;
+    background-color: $color-default-white;
+    top: 0;
+    left: 0;
+  }
+
+  @include vp-1200 {
+    padding-right: 2px;
+  }
+
+  @include vp-767 {
+    padding-top: 15px;
+  }
+}
+
+.tour-card__bottom-item {
+  display: flex;
+  flex-direction: column;
+
+  & p {
+    margin: 0;
+    padding: 0;
+    margin-bottom: 8px;
+    color: $color-light;
+    font-family: $font-light;
+    font-size: 12px;
+    font-style: normal;
+    font-weight: 300;
+    line-height: 100%;
+
+    @include vp-767 {
+      margin-bottom: 5px;
+    }
+  }
+
+  & span {
+    color: $color-light;
+    font-family: $font-bold;
+    font-size: 13px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 100%;
+
+    @include vp-767 {
+      font-size: 12px;
+    }
+  }
+}
+
+.tour-card__stars-wrapper {
+  width: 79px;
+  height: 15px;
+  display: flex;
+
+  @include vp-1200 {
+    height: 14px;
+    width: 76px;
+  }
+
+  @include vp-767 {
+    width: 73px;
+    height: 14px;
+  }
+}
+
+.tour-card__stars-full {
+  flex-grow: 1;
+  background-image: url("../img/svg/full-star.svg");
+
+  &--two {
+    min-width: 30px;
+
+    @include vp-767 {
+      min-width: 29px;
+      background-size: 51%;
+    }
+  }
+
+  &--three {
+    min-width: 47px;
+    background-size: 33%;
+
+    @include vp-767 {
+      min-width: 44px;
+    }
+  }
+}
+
+.tour-card__stars-empty {
+  width: 100%;
+  flex-shrink: 1;
+  background-image: url("../img/svg/empty-star.svg");
+  background-size: contain;
+}

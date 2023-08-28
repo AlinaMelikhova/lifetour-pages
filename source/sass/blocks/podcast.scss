@@ -1,0 +1,152 @@
+.podcast {
+  width: 340px;
+  height: 220px;
+  background-color: rgba(245, 246, 250, 0.9);
+  box-shadow: inset 0 0 0 2px $color-light;
+  padding: 40px;
+}
+
+.podcast__title {
+  margin: 0;
+  margin-bottom: 4px;
+  padding: 0;
+  color: #1c3374;
+  font-family: $font-regular;
+  font-size: 22px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 100%;
+}
+
+.podcast__description-wrapper {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 16px;
+}
+
+.podcast__description {
+  margin: 0;
+  padding: 0;
+  color: rgba(28, 51, 116, 0.48);
+  font-family: $font-regular;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 100%;
+}
+
+.podcast__description-icons-wrapper {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 2px;
+
+  svg {
+    margin-right: 18px;
+    cursor: pointer;
+
+    &:last-child {
+      margin: 0;
+    }
+
+    &:hover {
+      opacity: 0.8;
+    }
+
+    &:active {
+      opacity: 0.6;
+    }
+  }
+}
+
+.podcast__progess-bar {
+  background-color: rgba(11, 18, 48, 0.4);
+  height: 2px;
+  position: relative;
+  margin-bottom: 9px;
+}
+
+.podcast__progess-bar-filled {
+  background-color: #1c3374;
+  height: 2px;
+  width: 148px;
+  position: absolute;
+  z-index: 1;
+  top: 0;
+  left: 0;
+
+  &::before {
+    content: "";
+    width: 8px;
+    height: 8px;
+    border-radius: 50%;
+    background-color: #1c3374;
+    position: absolute;
+    right: -3px;
+    top: -3px;
+    cursor: pointer;
+  }
+}
+
+.podcast__progess-bar-description-wrapper {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 15px;
+}
+
+.podcast__progess-bar-description {
+  color: #1c3374;
+  font-size: 10px;
+  font-family: $font-regular;
+  font-weight: 400;
+  line-height: 100%;
+}
+
+.podcast__buttons-wrapper {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.podcast__button {
+  margin: 0;
+  padding: 0;
+  background-color: $color-transparent;
+  border: none;
+  cursor: pointer;
+
+  &--player {
+    margin-right: 18px;
+
+    &:last-child {
+      margin-right: 0;
+      margin-top: -9px;
+    }
+  }
+
+  &--forward {
+    transform: rotate(180deg);
+  }
+
+  &:hover {
+    opacity: 0.8;
+  }
+
+  &:active {
+    opacity: 0.6;
+  }
+}
+
+.podcast__player-wrapper {
+  display: flex;
+  align-items: center;
+}
+
+.podcast__frame {
+  width: 100%;
+  height: 100%;
+  border: none;
+  position: absolute;
+  top: 93px;
+  left: -61px;
+  opacity: 0;
+}

@@ -1,0 +1,41 @@
+.button-dark-background {
+  color: $color-light;
+  background-color: $color-bright;
+  border: none;
+  cursor: pointer;
+  transition: opacity $trans-default;
+  font-family: $font-regular;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 16px;
+  display: inline-block;
+
+  @include vp-767 {
+    padding: 18px 35px;
+  }
+
+  &:hover:not(:disabled),
+  &:focus:not(:disabled) {
+    outline: none;
+    background-color: $color-light;
+    box-shadow: inset 0 0 0 1px #1c3374;
+    color: #1c3374;
+  }
+
+  &:active:not(:disabled) {
+    outline: none;
+    background-color: #1c3374;
+    color: $color-light;
+  }
+
+  &:disabled {
+    cursor: auto;
+    background-color: $color-light;
+    background-image: linear-gradient(
+      90deg,
+      rgba(2, 102, 193, 0.1) 0%,
+      rgba(2, 102, 193, 0.1) 100%
+    );
+  }
+}

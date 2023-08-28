@@ -1,0 +1,153 @@
+.about__container {
+  padding-top: 117px;
+  background-color: $color-light;
+
+  @include vp-1200 {
+    padding-top: 79px;
+  }
+
+  @include vp-767 {
+    padding-top: 16px;
+  }
+}
+
+.about__wrapper {
+  display: flex;
+  position: relative;
+
+  @include vp-767 {
+    flex-direction: column;
+  }
+}
+
+.about__img-wrapper {
+  min-width: 808px;
+  max-width: 100%;
+  object-fit: cover;
+  height: 474px;
+  margin-left: -120px;
+  margin-top: -23px;
+
+  @include vp-1200 {
+    min-width: 475px;
+    height: 402px;
+    margin-left: -45px;
+    margin-top: 18px;
+  }
+
+  @include vp-767 {
+    min-width: 320px;
+    margin-left: -15px;
+    margin-top: -16px;
+  }
+}
+
+.about__image {
+  min-width: 808px;
+  height: 474px;
+  object-fit: cover;
+
+  @include vp-1200 {
+    min-width: 475px;
+    height: 402px;
+  }
+
+  @include vp-767 {
+    min-width: 320px;
+    margin-bottom: 46px;
+  }
+}
+
+.about__description-wrapper {
+  margin-left: -73px;
+
+  @include vp-1200 {
+    margin-left: -76px;
+  }
+
+  @include vp-767 {
+    margin-left: 0;
+    padding-top: 46px;
+  }
+}
+
+.about__title {
+  margin-bottom: 56px;
+
+  @include vp-1200 {
+    margin-bottom: 34px;
+  }
+
+  @include vp-767 {
+    margin-bottom: 33px;
+  }
+}
+
+.about__list {
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+}
+
+.about__item {
+  margin-bottom: 29px;
+
+  &:last-child {
+    margin-bottom: 0;
+  }
+
+  @include vp-1200 {
+    margin-bottom: 27px;
+  }
+
+  @include vp-767 {
+    margin-bottom: 41px;
+  }
+
+  & h3 {
+    margin: 0;
+    padding: 0;
+    margin-bottom: 17px;
+    color: $color-dark;
+    font-family: $font-bold;
+    font-size: 21px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 100%;
+
+    @include vp-1200 {
+      font-size: 18px;
+    }
+
+    @include vp-767 {
+      font-size: 16px;
+      margin-bottom: 18px;
+    }
+  }
+
+  & p {
+    margin: 0;
+    padding: 0;
+    color: $color-dark;
+    font-family: $font-regular;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 22px;
+
+    @include vp-767 {
+      line-height: 20px;
+    }
+  }
+}
+
+.about__clouds-image {
+  position: absolute;
+  right: 0;
+  top: -189px;
+  z-index: 0;
+
+  @include vp-1200 {
+    display: none;
+  }
+}

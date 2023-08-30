@@ -109,7 +109,6 @@
 
 .tour-card__top-list {
   margin: 0;
-  margin-bottom: 23px;
   padding: 0;
   list-style-type: none;
   display: flex;
@@ -125,6 +124,7 @@
 
 .tour-card__top-item {
   margin-right: 20px;
+  margin-bottom: 23px;
   display: flex;
   align-items: center;
 
@@ -133,6 +133,7 @@
   }
 
   @include vp-767 {
+    margin-bottom: 0;
     margin-right: 16px;
   }
 

@@ -66,6 +66,7 @@
 
   &--tours {
     position: static;
+    margin-top: 11px;
 
     @include vp-1200 {
       margin-top: 6px;

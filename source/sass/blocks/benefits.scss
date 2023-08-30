@@ -171,6 +171,12 @@
 }
 
 .benefits__item-title-breaker {
+  display: none;
+
+  @include vp-1200 {
+    display: inline;
+  }
+
   @include vp-767 {
     display: none;
   }

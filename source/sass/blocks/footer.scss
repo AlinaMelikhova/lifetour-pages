@@ -17,6 +17,8 @@
 }
 
 .footer__wrapper {
+  width: 100%;
+
   @include vp-1200 {
     width: 100%;
   }
@@ -85,17 +87,19 @@
 }
 
 .footer__menu {
-  margin-right: 167px;
+  margin-right: auto;
   display: flex;
   align-items: center;
 
   @include vp-1200 {
     margin-right: 6px;
     margin-top: 5px;
+    margin-left: 20px;
   }
 
   @include vp-767 {
     margin-top: 0;
+    margin-left: 0;
   }
 }
 
@@ -116,10 +120,10 @@
 }
 
 .footer__menu-item {
-  margin-right: 32px;
+  margin: 5px 32px 5px 0;
 
   @include vp-1200 {
-    margin-right: 21px;
+    margin: 0 21px 5px 0;
   }
 
   @include vp-767 {
@@ -128,7 +132,7 @@
   }
 
   &:last-child {
-    margin: 0;
+    margin-right: 0;
   }
 }
 
@@ -191,6 +195,7 @@
   font-style: normal;
   font-weight: 600;
   line-height: 100%;
+  min-width: 145px;
 
   @include vp-1200 {
     display: none;

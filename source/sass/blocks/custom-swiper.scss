@@ -107,13 +107,14 @@
 
   &--gallery {
     position: static;
+    margin-bottom: 6px;
 
     @include vp-1200 {
-      top: 62px;
-      right: 45px;
+      margin-bottom: 17px;
     }
 
     @include vp-767 {
+      margin-bottom: 0;
       margin-left: auto;
     }
   }
@@ -131,8 +132,7 @@
   margin-right: 4px;
 
   &:hover,
-  &:focus-visible,
-  &:focus-within {
+  &:focus-visible {
     box-shadow: inset 0 0 0 1px #1c3374;
     background-color: rgba(255, 255, 255, 0);
     background-image: url("../img/svg/left-dark.svg");

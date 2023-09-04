@@ -43,7 +43,7 @@ const initToursSwiper = () => {
       },
       768: {
         slidesPerView: 2,
-        spaceBetween: 8,
+        spaceBetween: 12,
       },
     },
   });
@@ -57,6 +57,9 @@ const initEducationSwiper = () => {
     slidesPerView: 1,
     spaceBetween: 15,
     speed: 300,
+    watchSlidesProgress: true,
+    watchSlidesVisibility: true,
+    slideVisibleClass: 'swiper-slide-visible',
 
     navigation: {
       nextEl: '.swiper-button-next--education',

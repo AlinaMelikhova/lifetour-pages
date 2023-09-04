@@ -4,6 +4,7 @@ const menuCloseIcon = document.querySelector('.header__mob-menu-icon-cross');
 const menuWrapper = document.querySelector('.header__positioning-wrapper');
 const pageWrapper = document.querySelector('.page-wrapper');
 const heroWrapper = document.querySelector('.hero__container');
+const mainPage = document.querySelector('main');
 const menuLinks = Array.from(document.querySelectorAll('.header__menu-item'));
 
 const toggleMenuStyles = () => {
@@ -39,8 +40,10 @@ export const handleMobileMenu = () => {
   menuToggleButton.addEventListener('click', () => {
     if (pageWrapper.classList.contains('page-wrapper--mob-open')) {
       hideMenu();
+      mainPage.removeEventListener('click', hideMenu);
     } else {
       showMenu();
+      mainPage.addEventListener('click', hideMenu);
     }
   });
 };

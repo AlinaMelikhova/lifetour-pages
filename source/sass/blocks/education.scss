@@ -166,7 +166,7 @@
 
 .education__process-item {
   display: flex;
-  align-items: center;
+  align-items: end;
   position: relative;
 
   &::before {
@@ -191,7 +191,7 @@
       &::after {
         content: "";
         position: absolute;
-        width: calc(100% + 40px);
+        width: 100%;
         height: 1px;
         background-color: rgba(2, 102, 193, 0.1);
         bottom: -18px;
@@ -235,7 +235,7 @@
       &::after {
         content: "";
         position: absolute;
-        width: calc(100% + 40px);
+        width: 100%;
         height: 1px;
         background-color: rgba(2, 102, 193, 0.1);
         top: 1px;
@@ -283,14 +283,16 @@
 
   & svg {
     margin-right: 15px;
+    margin-bottom: 12px;
     min-width: 24px;
+
+    @include vp-1200 {
+      margin-bottom: 11px;
+    }
 
     @include vp-767 {
       min-width: 19px;
       height: 19px;
-    }
-
-    @include vp-767 {
       margin-right: 9px;
       margin-top: -4px;
     }

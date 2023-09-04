@@ -16,7 +16,7 @@
   }
 
   &:hover:not(:disabled),
-  &:focus:not(:disabled) {
+  &:focus-visible:not(:disabled) {
     outline: none;
     background-color: $color-light;
     box-shadow: inset 0 0 0 1px #1c3374;

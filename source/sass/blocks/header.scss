@@ -21,6 +21,7 @@
     &--mob-open {
       background-color: $color-light;
       padding-bottom: 65px;
+      max-height: 100vh;
 
       & .header__logo-icon {
         fill: $color-dark;
@@ -36,7 +37,12 @@
         display: block;
         left: 0;
         top: 0;
-        padding-top: 41px;
+        width: 100%;
+        max-height: 84vh;
+        z-index: 100;
+        overflow: auto;
+        padding-top: 0;
+        margin-top: 41px;
       }
 
       & .header__menu-link {
@@ -53,7 +59,9 @@
     }
 
     & .header__menu {
-      padding-top: 38px;
+      max-height: 88vh;
+      padding-top: 0;
+      margin-top: 38px;
     }
   }
 }
@@ -154,8 +162,8 @@
 .header__menu {
   position: absolute;
   top: 60px;
-  left: calc(50% - 298px);
-  width: 660px;
+  left: calc(50% - 260px);
+  width: 580px;
   display: flex;
   justify-content: center;
 
@@ -174,6 +182,7 @@
 
   @include vp-1200 {
     flex-direction: column;
+    align-items: flex-start;
   }
 }
 
@@ -291,7 +300,6 @@
   }
 
   &:hover,
-  &:focus,
   &:focus-visible {
     color: #1c3374;
     outline: none;

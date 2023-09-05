@@ -1468,6 +1468,9 @@ button,
   -ms-flex-direction: column;
   flex-direction: column;
   height: 100%;
+  -webkit-box-pack: end;
+  -ms-flex-pack: end;
+  justify-content: flex-end;
 }
 
 .tour-card__wrapper--caucasus {
@@ -1570,7 +1573,6 @@ button,
   -ms-flex-pack: justify;
   justify-content: space-between;
   position: relative;
-  margin-top: auto;
 }
 
 .tour-card__bottom-list::before {
@@ -2202,6 +2204,10 @@ button,
 
 .gallery__wrapper {
   padding: 0;
+  max-width: 1440px;
+  margin: 0 auto;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
 }
 
 .gallery__title {
@@ -2531,6 +2537,16 @@ button,
   margin-right: 30px;
 }
 
+.contacts__item-description-wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
+}
+
 .contacts__item-description-wrapper > h3 {
   padding: 0;
   margin: 0;
@@ -2553,6 +2569,7 @@ button,
   font-style: normal;
   font-weight: 400;
   line-height: 24px;
+  max-width: 293px;
 }
 
 .contacts__item-description-wrapper > a {
@@ -3937,7 +3954,7 @@ button.swiper-pagination-bullet {
     left: 0;
     top: 0;
     width: 100%;
-    max-height: 84vh;
+    max-height: calc(100vh - 139px);
     z-index: 100;
     overflow: auto;
     padding-top: 0;
@@ -4726,7 +4743,7 @@ button.swiper-pagination-bullet {
   }
 
   .header__positioning-wrapper .header__menu {
-    max-height: 88vh;
+    max-height: calc(100vh - 106px);
     padding-top: 0;
     margin-top: 38px;
   }
@@ -4854,8 +4871,10 @@ button.swiper-pagination-bullet {
   }
 
   .tour-card__wrapper {
+    max-width: 100%;
     min-width: 290px;
     padding: 197px 20px 25px;
+    aspect-ratio: 290/412;
   }
 
   .tour-card__wrapper--caucasus {
@@ -4877,6 +4896,7 @@ button.swiper-pagination-bullet {
 
   .tour-card__top-list {
     margin-bottom: 59px;
+    margin-top: auto;
     position: relative;
     -webkit-box-pack: start;
     -ms-flex-pack: start;
@@ -4901,6 +4921,7 @@ button.swiper-pagination-bullet {
 
   .tour-card__bottom-list {
     padding-top: 15px;
+    margin-top: 0;
   }
 
   .tour-card__bottom-item p {
@@ -5029,7 +5050,7 @@ button.swiper-pagination-bullet {
   .team-card__image {
     -o-object-fit: contain;
     object-fit: contain;
-    height: 212px;
+    height: auto;
   }
 
   .team-card__name-wrapper {
@@ -5055,6 +5076,7 @@ button.swiper-pagination-bullet {
 
   .about__image {
     min-width: 320px;
+    width: 320px;
     margin-bottom: 46px;
   }
 
@@ -5112,15 +5134,15 @@ button.swiper-pagination-bullet {
   }
 
   .review__item-img-wrapper {
-    min-width: 250px;
-    max-width: 250px;
-    height: 169px;
+    min-width: 100%;
+    max-width: 100%;
+    height: auto;
     margin: 0 auto 20px;
   }
 
   .review__item-img {
-    width: 250px;
-    height: 169px;
+    width: 100%;
+    height: auto;
   }
 
   .review__item-description-wrapper {
@@ -5129,7 +5151,7 @@ button.swiper-pagination-bullet {
 
   .review__paragraph-wrapper {
     margin-bottom: 15px;
-    min-height: 190px;
+    min-height: auto;
   }
 
   .benefits__container {

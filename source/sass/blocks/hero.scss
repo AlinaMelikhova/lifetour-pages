@@ -23,74 +23,38 @@
   }
 
   &--caucasus {
-    background-image: url("../img/hero/hero1.jpg");
-
-    @media (min-resolution: 2dppx) {
-      background-image: url("../img/hero/hero1@2x.jpg");
-    }
+    background-image: url("../img/hero/hero1@2x.jpg");
 
     @include vp-1200 {
-      background-image: url("../img/hero/hero1-tab.jpg");
-
-      @media (min-resolution: 2dppx) {
-        background-image: url("../img/hero/hero1-tab@2x.jpg");
-      }
+      background-image: url("../img/hero/hero1-tab@2x.jpg");
     }
 
     @include vp-767 {
-      background-image: url("../img/hero/hero1-mob.jpg");
-
-      @media (min-resolution: 2dppx) {
-        background-image: url("../img/hero/hero1-mob@2x.jpg");
-      }
+      background-image: url("../img/hero/hero1-mob@2x.jpg");
     }
   }
 
   &--kamchatka {
-    background-image: url("../img/hero/hero2.jpg");
-
-    @media (min-resolution: 2dppx) {
-      background-image: url("../img/hero/hero2@2x.jpg");
-    }
+    background-image: url("../img/hero/hero2@2x.jpg");
 
     @include vp-1200 {
-      background-image: url("../img/hero/hero2-tab.jpg");
-
-      @media (min-resolution: 2dppx) {
-        background-image: url("../img/hero/hero2-tab@2x.jpg");
-      }
+      background-image: url("../img/hero/hero2-tab@2x.jpg");
     }
 
     @include vp-767 {
-      background-image: url("../img/hero/hero2-mob.jpg");
-
-      @media (min-resolution: 2dppx) {
-        background-image: url("../img/hero/hero2-mob@2x.jpg");
-      }
+      background-image: url("../img/hero/hero2-mob@2x.jpg");
     }
   }
 
   &--altay {
-    background-image: url("../img/hero/hero3.jpg");
-
-    @media (min-resolution: 2dppx) {
-      background-image: url("../img/hero/hero3@2x.jpg");
-    }
+    background-image: url("../img/hero/hero3@2x.jpg");
 
     @include vp-1200 {
-      background-image: url("../img/hero/hero3-tab.jpg");
-
-      @media (min-resolution: 2dppx) {
-        background-image: url("../img/hero/hero3-tab@2x.jpg");
-      }
+      background-image: url("../img/hero/hero3-tab@2x.jpg");
     }
 
     @include vp-767 {
-      background-image: url("../img/hero/hero3-mob.jpg");
-
-      @media (min-resolution: 2dppx) {
-        background-image: url("../img/hero/hero3-mob@2x.jpg");
-      }
+      background-image: url("../img/hero/hero3-mob@2x.jpg");
     }
   }
 
